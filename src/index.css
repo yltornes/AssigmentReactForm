@@ -1,0 +1,26 @@
+
+.App {
+  font-family: sans-serif;
+  max-width: 500px;
+  padding: 3px;
+}
+
+.formSignUp {
+  padding: 10px;
+  border: 1px solid purple;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+label,
+input {
+  display: block;
+  text-align: left;
+
+}
+label,
+button {
+  margin-top: 1rem;
+}
