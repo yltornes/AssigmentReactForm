@@ -13,15 +13,15 @@ import React from 'react';
          firstName: Yup.string() // Validate First Name 2 to 25 Caracters
            .min(2, 'Must be 2 characters or more')
            .max(25, 'Must be 25 characters or less')
-           .required('Required'),
+           .required('First  Name is Required'),
          lastName: Yup.string()  // Validate Last Name 2 to 25 Caracters
            .min(2, 'Must be 2 characters or more')
            .max(25, 'Must be 25 characters or less')
-           .required('Required'),
+           .required('Last Name is Required'),
          businessAddress: Yup.string() // Validate Address 5 to 100 Caracters
            .min(5, 'Must be 5 characters or more')
            .max(100, 'Must be 100 characters or less')
-           .required('Required'),
+           .required('Business Address is Required'),
          npiNumber: Yup.number()  // Validate NPI number to 12 digits
            .typeError("That doesn't look like a NPI number")
            .positive("A NPI number can't start with a minus")
@@ -36,7 +36,7 @@ import React from 'react';
            .min(999999999, "to short")
            .max(10000000000, "to long")
            .required('A phone number is required'),
-         emailAddress: Yup.string().email('Invalid email address').required('Required'), 
+         emailAddress: Yup.string().email('Invalid email address').required('Email Address is Required'), 
          // Validate Email.
        })}
        onSubmit={(values, { setSubmitting }) => { //Show the values when submit form

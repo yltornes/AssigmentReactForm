@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import SignupForm from "./SignupForm";
+import SignupForm from "./components/SignupForm/SignupForm";
 
 import logo from './logo.svg';
-import './App.css';
+import './assets/css/App.css';
+import './assets/css/index.css';
 
 function App() {
   return (
